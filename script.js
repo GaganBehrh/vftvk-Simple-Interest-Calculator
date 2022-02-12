@@ -9,7 +9,7 @@ function compute() {
   if (principal <= 0) alert("Enter positive number");
   var rate = document.getElementById("rate").value;
   var years = document.getElementById("years").value;
-  var amount = principal * (1 + rate * years);
+  
 
   var interest = (principal * years * rate) / 100;
   document.getElementById("result").innerHTML =
@@ -18,7 +18,7 @@ function compute() {
     ",<br> at an interest rate of " +
     rate +
     "<br> You will receive an amount of " +
-    amount +
+    interest +
     ",<br>in the year " +
     years +
     "<br>";
